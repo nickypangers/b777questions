@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --dotenv .env.local --https --ssl-cert localhost.pem --ssl-key localhost-key.pem --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.2",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "nuxt": "^3.11.2",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "daisyui": "^4.10.2",
+    "eslint": "^9.0.0",
+    "nuxt-lodash": "^2.5.3",
+    "prisma": "^5.12.1"
+  }
+}
