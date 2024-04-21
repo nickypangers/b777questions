@@ -3,8 +3,10 @@ const router = useRouter();
 </script>
 <template>
   <header>
-    <div class="p-2">
+    <div>
+      <div class="p-2">
       <button @click="router.push('/')">B777Questions</button>
+    </div>
     </div>
   </header>
 </template>

@@ -19,6 +19,7 @@ const password = ref('');
         placeholder="Password"
         v-model="password"
       />
+      <button class="btn btn-primary btn-sm max-w-xs">Login</button>
     </div>
   </main>
 </template>
