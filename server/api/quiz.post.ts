@@ -34,7 +34,7 @@ export default defineEventHandler(async (event) => {
         data: {
             user: {
                 connect: {
-                    email: 'Frederique44@yahoo.com',
+                    email: 'testing@testing.com',
                 }
             },
             quizSelections: {

@@ -8,6 +8,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --dotenv .env.local --https --ssl-cert localhost.pem --ssl-key localhost-key.pem --host",
+    "staging": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --dotenv .env --https --ssl-cert localhost.pem --ssl-key localhost-key.pem --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

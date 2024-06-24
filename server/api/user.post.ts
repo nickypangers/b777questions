@@ -4,11 +4,13 @@ import { faker } from '@faker-js/faker';
 const prisma = new PrismaClient();
 
 export default defineEventHandler(async (event) => {
+    const { email, password, username } = await readBody(event);
+
     return prisma.user.create({
         data: {
-            email: faker.internet.email(),
-            username: faker.internet.userName(),
-            password: '1234',
+            email,
+            username,
+            password: password,
         }
     })
 })

@@ -13,7 +13,7 @@ const emit = defineEmits<{
 
 <template>
   <div>
-    <div class="grid grid-cols-10 gap-4">
+    <div class="grid grid-cols-5 md:grid-cols-10 gap-4">
       <button
         v-for="result in results"
         class="text-center"

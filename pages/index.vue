@@ -1,10 +1,17 @@
 <script setup lang="ts">
 const router = useRouter();
 
+// async function createQuiz() {
+//   const { data: quiz } = await useFetch('/api/quiz', { method: 'POST' });
+//   if (quiz.value) {
+//     let quizId = quiz.value.id;
+//     router.push(`/quiz/${quizId}`);
+//   }
+// }
 async function createQuiz() {
-  const { data: quiz } = await useFetch('/api/quiz', { method: 'POST' });
-  if (quiz.value) {
-    let quizId = quiz.value.id;
+  const data = await $fetch('/api/quiz', { method: 'POST' });
+  if (data) {
+    let quizId = data.id;
     router.push(`/quiz/${quizId}`);
   }
 }
